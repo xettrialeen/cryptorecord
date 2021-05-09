@@ -39,6 +39,9 @@
             <div class="crypto-body">
                 <div class="cb-wrap">
                     <div class="first-cb list">
+                        <div class="positioncb">
+                            <p>From</p>
+                        </div>
                         <div class="input-fcb">
                             <input :value="bitcoin()" type="number" placeholder="0">
                             <button>
@@ -53,6 +56,9 @@
                         </div>
                     </div>
                     <div class="second-cb list">
+                        <div class="positioncb pcb2">
+                            <div class="pcb-second"> <img src="./image/icons/payment.svg" alt=""></div>
+                        </div>
                         <div class="input-fcb">
                             <input v-model="usdAmount" type="number" placeholder="0">
                             <button>
@@ -66,6 +72,9 @@
                         </div>
                     </div>
                     <div class="third-cb list">
+                        <div class="positioncb">
+                            <p>To</p>
+                        </div>
                         <div class="input-fcb">
                             <input :value="etherium()" type="number" placeholder="0">
                             <button>

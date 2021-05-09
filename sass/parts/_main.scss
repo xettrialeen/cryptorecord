@@ -54,6 +54,7 @@ body {
         }
 
         .list {
+          position: relative;
           display: flex;
           margin-bottom: 20px;
           width: 100%;
@@ -73,12 +74,43 @@ body {
           -o-transition: border 0.3s ease-in-out;
           &:hover {
             border: 2.2px solid #3c4a5b;
+            .positioncb {
+              color: #01c48c;
+            }
           }
           &:active {
             border: 2.2px solid #3c4a5b;
           }
 
           //   its child
+
+          //   this child will be positioned
+          .positioncb {
+            position: absolute;
+            top: -22px;
+            left: 15px;
+            width: 40px;
+            height: 40px;
+            background-color: #fefefe;
+            color: #8494a5;
+            font-family: $rob;
+            font-weight: 500;
+            font-size: 0.8em;
+            padding: 2px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.3s ease-in-out;
+            -webkit-transition: color 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out;
+            -ms-transition: color 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out;
+          }
           .input-fcb {
             display: flex;
             flex-direction: row;
@@ -153,6 +185,24 @@ body {
         .first-cb {
         }
         .second-cb {
+          .pcb2 {
+            width: 40px;
+            height: 40px;
+            border: 5px solid #e4eaf2;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            left: -20px;
+            top: 15px;
+          }
+          .pcb-second {
+            img {
+              padding: 7px;
+              width: 35px;
+            }
+          }
           width: 70%;
           @include mq("max", "800px") {
             width: 90%;
@@ -162,6 +212,7 @@ body {
             justify-content: space-between;
             input {
               width: 50%;
+              padding-left: 20px;
             }
             button {
               width: 50%;
