@@ -1,0 +1,176 @@
+@import "../modules/functions";
+@import "../modules/variables";
+
+// starting from here
+
+body {
+  background-color: #fefefe;
+}
+
+#crypto {
+  .crypto-wrapper {
+    padding: 20px;
+    .crypto-title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-family: $pop;
+        font-size: 2em;
+        font-weight: 600;
+        color: $fontcolor;
+      }
+      p {
+        margin-top: 10px;
+        font-family: $rob;
+        color: $softcolor;
+        font-size: 1.2em;
+        @include mq("max", "454px") {
+          text-align: center;
+        }
+      }
+    }
+    .crypto-body {
+      width: 100%;
+      //   background-color: aqua;
+      margin-top: 50px;
+      .cb-wrap {
+        width: 40%;
+
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 auto;
+        @include mq("max", "800px") {
+          width: 100% !important;
+        }
+        @include mq("max", "903px") {
+          width: 70%;
+        }
+        @include mq("max", "1037px") {
+          width: 50%;
+        }
+
+        .list {
+          display: flex;
+          margin-bottom: 20px;
+          width: 100%;
+          //background-color: #fefefe;
+          border-radius: 12px;
+          border: 2.2px solid rgb(188, 202, 216);
+          padding: 10px;
+          -webkit-border-radius: 12px;
+          -moz-border-radius: 12px;
+          -ms-border-radius: 12px;
+          -o-border-radius: 12px;
+          transition: border 0.3s ease-in-out;
+
+          -webkit-transition: border 0.3s ease-in-out;
+          -moz-transition: border 0.3s ease-in-out;
+          -ms-transition: border 0.3s ease-in-out;
+          -o-transition: border 0.3s ease-in-out;
+          &:hover {
+            border: 2.2px solid #3c4a5b;
+          }
+          &:active {
+            border: 2.2px solid #3c4a5b;
+          }
+
+          //   its child
+          .input-fcb {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+            justify-content: space-between;
+            width: 100%;
+
+            input {
+              border-top-left-radius: 12px;
+              border-bottom-left-radius: 12px;
+              height: 100%;
+              width: 70%;
+              border: none;
+              outline: none;
+              padding-left: 10px;
+              background-color: #fefefe;
+              font-size: 1.8em;
+              font-family: $open;
+              color: #3c4a5b;
+              font-weight: 600;
+
+              &::placeholder {
+                color: #8494a5;
+              }
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            }
+            button {
+              @include mq("max", "800px") {
+                width: 50% !important;
+              }
+              border-top-right-radius: 12px;
+              border-bottom-right-radius: 12px;
+              outline: none;
+              cursor: pointer;
+              width: 30%;
+              height: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              padding: 5px;
+              border: none;
+              background-color: #fefefe;
+              .btn-text {
+                display: flex;
+                align-items: center;
+
+                img {
+                  width: 24px;
+                  margin-right: 7px;
+                }
+
+                span {
+                  font-family: $rob;
+                  font-size: 1.2em;
+                  color: rgb(60, 74, 91);
+                  font-weight: 500;
+                }
+              }
+              i {
+                font-size: 2em;
+                color: #8494a5;
+              }
+            }
+          }
+        }
+        .first-cb {
+        }
+        .second-cb {
+          width: 70%;
+          @include mq("max", "800px") {
+            width: 90%;
+          }
+          align-self: flex-end;
+          .input-fcb {
+            justify-content: space-between;
+            input {
+              width: 50%;
+            }
+            button {
+              width: 50%;
+            }
+          }
+        }
+        .third-cb {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+body {
+  background-color: #fefefe;
+}
+
+#crypto .crypto-wrapper {
+  padding: 20px;
+}
+#crypto .crypto-wrapper .crypto-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#crypto .crypto-wrapper .crypto-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #3c4a5b;
+}
+#crypto .crypto-wrapper .crypto-title p {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #68778d;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 454px) {
+  #crypto .crypto-wrapper .crypto-title p {
+    text-align: center;
+  }
+}
+#crypto .crypto-wrapper .crypto-body {
+  width: 100%;
+  margin-top: 50px;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  #crypto .crypto-wrapper .crypto-body .cb-wrap {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 903px) {
+  #crypto .crypto-wrapper .crypto-body .cb-wrap {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1037px) {
+  #crypto .crypto-wrapper .crypto-body .cb-wrap {
+    width: 50%;
+  }
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 12px;
+  border: 2.2px solid #bccad8;
+  padding: 10px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transition: border 0.3s ease-in-out;
+  -webkit-transition: border 0.3s ease-in-out;
+  -moz-transition: border 0.3s ease-in-out;
+  -ms-transition: border 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list:hover {
+  border: 2.2px solid #3c4a5b;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list:active {
+  border: 2.2px solid #3c4a5b;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  width: 100%;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb input {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  height: 100%;
+  width: 70%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #fefefe;
+  font-size: 1.8em;
+  font-family: "Open Sans", sans-serif;
+  color: #3c4a5b;
+  font-weight: 600;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb input::-moz-placeholder {
+  color: #8494a5;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb input:-ms-input-placeholder {
+  color: #8494a5;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb input::placeholder {
+  color: #8494a5;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb input::-webkit-outer-spin-button, #crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb button {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: none;
+  background-color: #fefefe;
+}
+@media screen and (max-width: 800px) {
+  #crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb button {
+    width: 50% !important;
+  }
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb button .btn-text {
+  display: flex;
+  align-items: center;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb button .btn-text img {
+  width: 24px;
+  margin-right: 7px;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb button .btn-text span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  color: #3c4a5b;
+  font-weight: 500;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .list .input-fcb button i {
+  font-size: 2em;
+  color: #8494a5;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .second-cb {
+  width: 70%;
+  align-self: flex-end;
+}
+@media screen and (max-width: 800px) {
+  #crypto .crypto-wrapper .crypto-body .cb-wrap .second-cb {
+    width: 90%;
+  }
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .second-cb .input-fcb {
+  justify-content: space-between;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .second-cb .input-fcb input {
+  width: 50%;
+}
+#crypto .crypto-wrapper .crypto-body .cb-wrap .second-cb .input-fcb button {
+  width: 50%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}/*# sourceMappingURL=style.css.map */

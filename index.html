@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Checker</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./sass/style.css">
+
+    <!-- c google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- c icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <div id="crypto">
+
+        <div class="crypto-wrapper">
+            <div class="crypto-title">
+                <h1>Crypto Currency</h1>
+                <p>Find your cryptocurrency values in prics also can be comparable.</p>
+            </div>
+            <div class="crypto-body">
+                <div class="cb-wrap">
+                    <div class="first-cb list">
+                        <div class="input-fcb">
+                            <input :value="bitcoin()" type="number" placeholder="0">
+                            <button>
+
+                                <div class="btn-text">
+                                    <img class="cryptoimg" src="./image/icons/bitcoin.svg" alt="">
+                                    <span>BTC</span>
+                                </div>
+                                <i class="uil uil-angle-down"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="second-cb list">
+                        <div class="input-fcb">
+                            <input v-model="usdAmount" type="number" placeholder="0">
+                            <button>
+                                <div class="btn-text">
+                                    <img class="cryptoimg" src="./image/icons/united-states.svg" alt="">
+                                    <span>USD</span>
+                                </div>
+                                <i class="uil uil-angle-down"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="third-cb list">
+                        <div class="input-fcb">
+                            <input :value="etherium()" type="number" placeholder="0">
+                            <button>
+                                <div class="btn-text">
+                                    <img class="cryptoimg" src="./image/icons/ethereum.svg" alt="">
+                                    <span>BTC</span>
+                                </div>
+                                <i class="uil uil-angle-down"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./vue/vue.js"></script>
+    <script src="./vue/index.js"></script>
+
+</body>
+
+</html>
