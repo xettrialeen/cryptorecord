@@ -4,10 +4,10 @@ const crypto = new Vue({
     usdAmount: "",
     crypto: {
       bitcoin: {
-        value: 58324.91,
+        value: 6840355.78,
       },
       etherium: {
-        value: 3865.61,
+        value: 450838.59,
       },
     },
   },
